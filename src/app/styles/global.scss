@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  padding: 8px;
+}
+
+#popup {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.185);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  height: calc(100vh - var(--header-height));
+  background-color: rgb(236, 236, 236);
+}

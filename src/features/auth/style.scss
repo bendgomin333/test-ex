@@ -1,0 +1,14 @@
+.auth-btn {
+  cursor: pointer;
+  padding: 2px 10px;
+  border-radius: 3px;
+  color: #2d3448;
+  border: 1px solid #2d344875;
+  // font-family: 'Roboto Slab', serif;
+
+  &:hover {
+    transition: 0.2s;
+    background-color: #2d3448;
+    color: #fff;
+  }
+}
