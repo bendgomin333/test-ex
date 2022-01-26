@@ -1,7 +1,7 @@
-### `Test users: `
+### `Test users`
 
-admin : admin
-user : user
+admin: admin\
+user: user
 
 
 ### `npm start`
