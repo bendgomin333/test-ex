@@ -3,7 +3,6 @@ import './style.scss';
 import { useFormik } from 'formik'
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../auth/model';
-import { username } from './../auth/selectors';
 import { useEffect } from 'react';
 import * as AuthSelectors from '../auth/selectors'
 
@@ -20,10 +19,13 @@ export const LoginForm = ({ visible, closePopup }) => {
       password: ''
     },
     onSubmit: values => {
-      console.log(values)
       dispatch(login({ username: values.username, password: values.password }))
     }
   })
+
+  useEffect(() => {
+    visible ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''
+  }, [visible])
 
   useEffect(() => {
     if (!isAuth) return

@@ -30,3 +30,12 @@
 .logo {
   height: 48px;
 }
+
+@media all and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .logo-mini {
+    display: block;
+  }
+}

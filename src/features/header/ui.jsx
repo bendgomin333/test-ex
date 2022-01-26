@@ -11,6 +11,9 @@ export const Header = () => {
             <Link to='/' className="logo">
               <img src={process.env.PUBLIC_URL + '/images/logo.svg'} alt="logo"></img>
             </Link>
+            <Link to='/' className="logo-mini" hidden>
+              <img src={process.env.PUBLIC_URL + '/images/logo-mini.png'} alt="logo"></img>
+            </Link>
             <Link to='/news'>
               Новости
             </Link>

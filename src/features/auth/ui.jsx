@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { LoginForm } from '../login-form/ui'
-import { login, logout } from './model'
+import { logout } from './model'
 import * as AuthSelectors from './selectors'
 import "./style.scss"
 

@@ -31,6 +31,6 @@ li {
 }
 
 main {
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
   background-color: rgb(236, 236, 236);
 }

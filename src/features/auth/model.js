@@ -42,7 +42,6 @@ const authSlice = createSlice({
       state.loading = true
     })
       .addCase(login.fulfilled, (state, action) => {
-        console.log(action.payload)
         state.isAuth = true
         state.username = action.payload.username
         state.privilegies = action.payload.privilegies

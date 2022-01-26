@@ -1,0 +1,46 @@
+.news {
+    &__line {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__item {
+        background-color: rgb(240, 240, 240);
+        box-shadow: 0 0 8px rgb(199, 199, 199);
+        padding: 16px;
+        padding-bottom: 30px;
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__text {
+
+    }
+
+    &__control {
+        position: absolute;
+        bottom: 8px;
+        width: calc(100% - 32px);
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+
+        span {
+            cursor: pointer;
+        }
+    }
+
+    &__moderate {
+        color: rgb(228, 23, 23);
+    }
+}
+
+@media all and (max-width: 768px) {
+    .news__line {
+        grid-template-columns: 1fr;
+    }
+}
